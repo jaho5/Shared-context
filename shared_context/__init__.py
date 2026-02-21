@@ -9,10 +9,13 @@ from shared_context.errors import (
     SessionNotFoundError,
     SessionArchivedError,
 )
+from shared_context.schema import anthropic_tool, openai_tool
+from shared_context.session import SessionManager
 from shared_context.store import SharedContextStore
 
 __all__ = [
     "SharedContextStore",
+    "SessionManager",
     "SharedContextError",
     "KeyNotFoundError",
     "ValueTooLargeError",
@@ -20,4 +23,6 @@ __all__ = [
     "InvalidKeyError",
     "SessionNotFoundError",
     "SessionArchivedError",
+    "openai_tool",
+    "anthropic_tool",
 ]
